@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #f5f5f5;
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.badge {
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.badge.online { background: #16a34a; }
+.badge.offline { background: #dc2626; }
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 1.05rem;
+  margin: 0 0 0.75rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+input, textarea, button {
+  font: inherit;
+  padding: 0.55rem 0.7rem;
+  border-radius: 4px;
+}
+
+input, textarea {
+  border: 1px solid #ccc;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+button {
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#btn-purgar {
+  background: #475569;
+  font-size: 0.85rem;
+}
+
+.header-lista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.header-lista h2 {
+  margin: 0;
+}
+
+#lista-outbox {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item-outbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.65rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.item-titulo { font-weight: 600; }
+.item-descripcion { font-size: 0.9rem; color: #444; }
+.item-hora { font-size: 0.8rem; color: #666; }
+
+.estado-pill {
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.estado-pendiente { background: #fef3c7; color: #92400e; }
+.estado-sincronizado { background: #dcfce7; color: #166534; }
+.estado-vacio { color: #666; text-align: center; padding: 0.75rem 0; }
